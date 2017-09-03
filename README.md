@@ -1,6 +1,6 @@
 # A/B Testing
 
-AB Testing at first appears to be a simple task. Group users into a bucket and masure whether they click on a red or green button.
+AB Testing at first appears to be a simple task. Group users into a bucket and measure whether they click on a red or green button.
 
 But once you dive into the details, it becomes much more complex.
 
@@ -11,7 +11,7 @@ The objective of this repository is to provide knowledge to new comers to unders
 In no partucular order:
 
 * [Best Practices From Optimizely (Talk)](BestPracticesFromOptimizely.md)
-* [Controlled Experiments On The Web (Paper)] (ControlledExperimentsOnTheWeb.md)
+* [Controlled Experiments On The Web (Paper)](ControlledExperimentsOnTheWeb.md)
 * [Experiments At Airbnb (Article)](ExperimentsAtAirbnb.md)
 * [Focusing On The Long Term (Paper)](FocusingOnTheLongTerm.md)
 * [How Not To Run An A-B Test (Article)](HowNotToRunAnA-BTest.md)
@@ -80,7 +80,7 @@ http://www.evanmiller.org/ab-testing/sample-size.html
 Allows calculation of sample sizes
 
 
-
+## Further Rough Notes
 
 
 https://www.forbes.com/sites/danwoods/2017/03/09/why-ab-testers-have-the-best-jobs-in-tech/#7046399d73fe

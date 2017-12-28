@@ -80,6 +80,22 @@ http://www.evanmiller.org/ab-testing/sample-size.html
 Allows calculation of sample sizes
 
 
+## What to Optimize For
+
+http://www.exp-platform.com/Documents/controlledExperimentsHippoEbay.pdf
+
+**Define Your OEC**
+
+Optimize for the long term, not just clickthroughs
+
+* The sewing machine ad did not win on clickthrough, but it won on sales because they sold many pairs
+* Example long-term metrics
+    * Time on site (per time period, say week or month)
+    * Visit frequency
+* Phrased differently: optimize for customer lifetime value
+* We use the term OEC, or Overall Evaluation Criterion, to denote the long-term metric you really care about
+* Continue to evaluate many metrics to understand the specifics and for understanding why the OEC changed
+
 ## Further Rough Notes
 
 

@@ -23,6 +23,7 @@ In A/B experiments, we may need use more than one metric when evaluating the suc
 
 
 > It has been suggested that OECs should include metrics that reflect an improvement in the long-term (years) rather than metrics that merely optimize for the short-term (days or weeks). In [2], Kohavi et al. show that optimizing for short-term gains may actually be detrimental in the long-term.
+> We encountered this problem at Google when experimenting with changes to the systems and algorithms that determine which ads show when users search. Optimizing which ads show based on short-term revenue is the obvious and easy thing to do, but may be detrimental in the long-term if user experience is negatively impacted. Since we did not have methods to measure the long-term user impact, we used short-term user satisfaction metrics as a proxy for the longterm impact. When using those user satisfaction metrics, we did not know what trade-off to use between revenue and user satisfaction, so we tended to be conservative, opting for launch variants with strong user experience. The qualitative nature of this approach was unsatisfying: we did not know if we were being too conservative or not conservative enough. [4](Page 1)
 
 
 [1][Design of Experiments Using The Taguchi Approach: 16 Steps to Product and Process Improvement](https://books.google.com/books?id=6zq3c3FaCq8C&q=Overall+Evaluation+Criterion#v=snippet&q=Overall%20Evaluation%20Criterion&f=false)

@@ -1,5 +1,7 @@
 # A/B Testing
 
+[Read an introduction to AB Testing](IntroductionToABTesting.md)
+
 AB Testing at first appears to be a simple task. Group users into a bucket and measure whether they click on a red or green button.
 
 But once you dive into the details, it becomes much more complex.

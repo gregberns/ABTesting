@@ -21,8 +21,14 @@ In A/B experiments, we may need use more than one metric when evaluating the suc
 > * Continue to evaluate many metrics to understand the specifics and for understanding why the OEC changed
 > [3](Slide 10)
 
+
+> It has been suggested that OECs should include metrics that reflect an improvement in the long-term (years) rather than metrics that merely optimize for the short-term (days or weeks). In [2], Kohavi et al. show that optimizing for short-term gains may actually be detrimental in the long-term.
+
+
 [1][Design of Experiments Using The Taguchi Approach: 16 Steps to Product and Process Improvement](https://books.google.com/books?id=6zq3c3FaCq8C&q=Overall+Evaluation+Criterion#v=snippet&q=Overall%20Evaluation%20Criterion&f=false)
 
-[2][Puzzling Outcomes In Controlled Experiments](http://www.exp-platform.com/Documents/puzzlingOutcomesInControlledExperiments.pdf)
+[2][Trustworthy Online Controlled Experiments: Five Puzzling Outcomes Explained](http://www.exp-platform.com/Documents/puzzlingOutcomesInControlledExperiments.pdf)
 
 [3][Practical Guide to Controlled Experiments on the Web: Listen to Your Customers not to the HiPPO](http://www.exp-platform.com/Documents/controlledExperimentsHippoEbay.pdf)
+
+[4][Focusing on the Long-term: It’s Good for Users and Business](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43887.pdf)

@@ -16,10 +16,10 @@ Mixpanel / Amplitude for logging and I think analytics
 ## Notes
 
 p1
-Experiments may be used to explore a design space [19], better attribute outcomes to causes [3, 14], and estimate effects that help decision makers understand how people react to changes and use their services [23, 35].
+Experiments may be used to explore a design space [[19]](ControlledExperimentsOnTheWeb.md), better attribute outcomes to causes [3, 14], and estimate effects that help decision makers understand how people react to changes and use their services [23, 35].
 
 p2
-Several papers by Kohavi et al. present recommendations on how to implement and instrument experiments [19], as well as common pitfalls in analyzing experiments [12, 18].
+Several papers by Kohavi et al. present recommendations on how to implement and instrument experiments [[19]](ControlledExperimentsOnTheWeb.md), as well as common pitfalls in analyzing experiments [12, 18].
 
 The PlanOut language separates experimental design from application logic and focuses experimenters on the core aspect of an experiment: how units (e.g., users, items, cookies) are randomly assigned to conditions, as defined by parameters (e.g., settings for user interface elements, references to ranking algorithms). PlanOut promotes a mental model where every aspect of the site is parameterizable, and experiments are a way of evaluating user experiences defined by those parameters.
 

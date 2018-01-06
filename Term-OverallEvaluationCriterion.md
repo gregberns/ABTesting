@@ -6,7 +6,8 @@ Overall Evaluation Criterion (OEC) is referenced in many of the papers published
 
 In A/B experiments, we may need use more than one metric when evaluating the success of an experiment.
 
-> The Overall Evaluation Criterion (OEC) [1] is a quantitative measure of the experiment’s objective. In statistics this is often called the Response or Dependent Variable; other synonyms include Endpoint, Outcome, Evaluation metric, Performance metric, Key Performance Indicator (KPI), or Fitness Function. [2](Page 3)
+> The Overall Evaluation Criterion (OEC) [1] is a quantitative measure of the experiment’s objective. In statistics this is often called the Response or Dependent Variable (Mason et al. 1989;Box et al. 2005); other synonyms include Outcome, Evaluation metric, Performance metric, or Fitness Function (Quarto-vonTivadar 2006). Experiments may have multiple objectives and a scorecard approach might be taken (Kaplan and Norton 1996)[5], although selecting a single metric, possibly as a weighted combination of such objectives is highly desired and recommended. A single metric forces tradeoffs to be made once for multiple experiments and aligns the organization behind a clear objective. A good OEC should not be short-term focused (e.g., clicks); to the contrary, it should include factors that predict long-term goals, such as predicted lifetime value and repeat visits. Ulwick describes some ways to measure what customers want.”
+> [2](Page 3)
 
 > When a product or process under study is to satisfy more than one objective, performances of samples tested for each trial condition are evaluated by multiple criteria of evaluation. Such evaluations can be combined into a single quantity, the overall evaluation criterion (OEC), which is considered the result for the sample. But the evaluation of each individual criterion may have different units of measure, quality characteristics, and relative weighting. To combine the different criteria, they must first be normalized and weighted accordingly. [1](Page 53)
 
@@ -33,3 +34,5 @@ In A/B experiments, we may need use more than one metric when evaluating the suc
 [3][Practical Guide to Controlled Experiments on the Web: Listen to Your Customers not to the HiPPO](http://www.exp-platform.com/Documents/controlledExperimentsHippoEbay.pdf)
 
 [4][Focusing on the Long-term: It’s Good for Users and Business](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43887.pdf)
+
+[5][Balanced Scorecard](http://home.bi.no/fgl99011/bok2302/BM96.pdf)

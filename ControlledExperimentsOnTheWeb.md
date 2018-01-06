@@ -17,13 +17,13 @@ Term: “Experimental unit. The entity over which metrics are calculated before 
 
 Term: “A/A test. Sometimes called a Null Test (Peterson 2004). Instead of an A/B test, you exercise the experimentation system, assigning users to one of two groups, but expose them to exactly the same experience. An A/A test can be used to (i) collect data and assess its variability for power calculations, and (ii) test the experimentation system (the Null hypothesis should be rejected about 5% of the time when a 95% confidence level is used).”
 
-3.4 Effect of robots on experimental results 
+## 3.4 Effect of robots on experimental results 
 Robots can introduce significant skew into estimates, enough to render assumptions invalid. We have seen cases where robots caused many metrics to be significant when they should not have been (e.g., much more than 5% false positives for an A/A test).
 
-3.5.3 Software migrations 
+## 3.5.3 Software migrations 
 Experiments can be used to help with software migration. If a feature or a system is being migrated to a new backend, new database, or a new language, but is not expected to change user-visible features, an A/B test can be executed with the goal of retaining the Null Hypothesis, which is that the variants are not different. We have seen several such migrations, where the migration was declared complete, but an A/B test showed significant differences in key metrics, helping identify bugs in the port. Because the goal here is to retain the Null Hypothesis, it is crucial to make sure the experiment has enough statistical power to actually reject the Null Hypothesis if it false.
 
-3.6 Limitations
+## 3.6 Limitations
 
 Quantitative metrics, but no explanations. It is possible to know which variant is better, and by how much, but not “why.”
 
@@ -40,30 +40,33 @@ Analysis and interpretation are more difficult.
 It can take longer to begin the test. 
 Generally, we believe the first experiment one does should be an A/B test mainly due to the complexity of testing more than one factor in the same test.
 
-5.0 Implementation architecture 
+## 5.0 Implementation architecture 
 Implementing an experiment on a website involves three components. The first component is the randomization algorithm, which is a function that maps end users to variants. The second component is the assignment method, which uses the output of the randomization algorithm to determine the experience that each user will see on the website. The third component is the data path, which captures raw observation data as the users interact with the website, aggregates it, applies statistics, and prepares reports of the experiment’s outcome.
 
-6.1.2 Speed matters 
+## 5.3.1 Event-triggered filtering
+One critical way to control this variability is to restrict the analysis to only those users who were impacted by the experiment (see Sect. 3.2.3). We can further restrict the analysis to the portion of user behavior that was affected by the experiment. We refer to these data restrictions as event-triggered filtering. Event-triggered filtering is implemented by tracking the time at which each user first saw content that was affected by the experiment.
+
+## 6.1.2 Speed matters 
 A Treatment might provide a worse user experience because of its performance. Linden (2006b, p. 15), wrote that experiments at Amazon showed a 1% sales decrease for an additional 100msec, and that a specific experiment at Google, which increased the time to display search results by 500 msecs reduced revenues by 20%
 
-6.2.1 Run continuous A/A tests
+## 6.2.1 Run continuous A/A tests
 
-6.2.2 Automate ramp-up and abort
+## 6.2.2 Automate ramp-up and abort
 Automatically shut-down a Treatment if it is significantly underperforming relative to the Control
 
-6.2.3 Determine the minimum sample size 
+## 6.2.3 Determine the minimum sample size 
 Decide on the statistical power, the effect you would like to detect, and estimate the variability of the OEC through an A/A test. Based on this data you can compute the minimum sample size needed for the experiment and hence the running time for your web site.
 
-6.2.4 Assign 50% of users to treatment One common practice among novice experimenters is to run new variants for only a small percentage of users.
+## 6.2.4 Assign 50% of users to treatment One common practice among novice experimenters is to run new variants for only a small percentage of users.
 
-6.2.5 Beware of day of week effects Even if you have a lot of users visiting the site, implying that you could run an experiment for only hours or a day, we strongly recommend running experiments for at least a week or two, then continuing by multiples of a week so that day-of-week effects can be analyzed.
+## 6.2.5 Beware of day of week effects Even if you have a lot of users visiting the site, implying that you could run an experiment for only hours or a day, we strongly recommend running experiments for at least a week or two, then continuing by multiples of a week so that day-of-week effects can be analyzed.
 
 “it would require over 125 days, a period we consider too long for reliable result; factors, such as cookie churn, that have secondary impact in experiments running for a few weeks may start contaminating the data.”
 
-6.3.2 Beware of launching features that “do not hurt” users
+## 6.3.2 Beware of launching features that “do not hurt” users
 In the face of a “no significant difference” result, sometimes the decision is made to launch the change anyway “because it does not hurt anything.” It is possible that the experiment is negative but underpowered.
 
-6.3.4 Change to a data-driven culture
+## 6.3.4 Change to a data-driven culture
 “Sometimes you have to kiss a lot of frogs to find one prince. So how can you find your prince faster? By finding more frogs and kissing them faster and faster.”
 In a web world, we can integrate customer feedback directly through prototypes and experimentation. If an organization has done the hard work to agree on an OEC and vetted an experimentation system, experimentation can provide real data and move the culture towards attaining shared goals rather than battle over opinions.
 

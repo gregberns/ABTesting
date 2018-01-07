@@ -30,6 +30,6 @@ Dave McClure discusses 'Startup Metrics for Pirates' which is a different perspe
 
 [2] 'Startup Metrics for Pirates' slides (https://www.slideshare.net/dmc500hats/startup-metrics-for-pirates-long-version)
 
-[2] http://www.expectedbehavior.com/experiments/pirate_metrics/ , previously  http://piratemetrics.com/
+[3] http://www.expectedbehavior.com/experiments/pirate_metrics/ , previously  http://piratemetrics.com/
 
-[3] http://500hats.typepad.com/500blogs/2007/09/startup-metrics.html
+[4] http://500hats.typepad.com/500blogs/2007/09/startup-metrics.html

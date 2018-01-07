@@ -25,6 +25,7 @@ In no partucular order:
 * [PlanOut Framework (by Facebook) (Paper)](PlanOut-Facebook.md)
 * [Statistics For The Internet Age](StatisticsForTheInternetAge.md)
 * [Tools For A/B Testing](ToolsForABTesting.md)
+* [Startup Metrics for Pirates (Talk)](PirateMetrics-AARRR.md)
 
 Tools
 

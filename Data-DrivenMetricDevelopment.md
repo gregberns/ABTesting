@@ -56,5 +56,22 @@ It is absolutely possible that there are some users whose clicking or reformulat
 
 In other words, the behavioral models for online metrics need to capture users’ homogeneous behavior instead of their heterogeneous behavior.
 
+## 3.6 Lesson 6: Choose the right rate metrics
 
+A rate metric is a metric that has two parts in its definition: the numerator and the denominator (and the denominator not be the count of users), such as Click Through Rate, Views per Movie, or Success Query Rate (i.e. the count of success queries divided by the count of total queries).
 
+Rate metrics have good properties such as with bounded values, less skewed (e.g. the value of rate metric Query Success Rate is bounded between 0 and 1 and its distribution is less skewed than the count metric of Successful Queries per User) and relatively more sensitive.
+
+Thus, there are two rules we have to follow when dealing with rate metrics:
+1. We should always keep the denominator and the numerator as debugging metrics (discussed in Section 3.2) for a rate metric;
+2. When we choose a rate metric to be a goal metric, we should choose the one whose denominator is relatively more stable in most cases.
+
+The second issue is that there are two ways to compute the metrics for rate metrics: Average of Ratios and Ratio of Averages.
+
+For instance, Click Through Rate (CTR) can be defined as A) Average CTR per User, and B) #(Clicks of all users)/#(Pageviews of all users).
+
+Their main difference is how users are weighted. For average of ratios, users have the same weight on the final metric because each user has a single value of ratio. For ratio of averages, mathematically it is equivalent to weighted average of ratio per user, where weight is proportional to the denominator value for each user, e.g. user with more pageviews will have a higher impact on CTR.
+
+Because of the difference in weighting, optimizing ratio of averages puts more emphasize on heavy users while optimizing average of ratios treats each user equally important.
+
+In our experience, these two versions of rate metrics move in the same direction for most experiments. When they don’t, we get an interesting signal that the treatment effect is different between heavy users and average users, which begs our further investigation.

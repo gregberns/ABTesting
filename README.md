@@ -8,6 +8,12 @@ But once you dive into the details, it becomes much more complex.
 
 The objective of this repository is to provide knowledge to new comers to understand the complexities and nuances of A/B teting and resources to learn from.
 
+## Contribution
+
+Over the last many years, others have found this repository useful.
+
+If you find this repository useful and have content or information to contribute that would be useful to others, please submit a PR.
+
 ## Terms
 
 * [Overall Evaluation Criterion](Term-OverallEvaluationCriterion.md)
